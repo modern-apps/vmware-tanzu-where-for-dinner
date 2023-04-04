@@ -7,6 +7,7 @@ metadata:
     apps.tanzu.vmware.com/workload-type: web
     app.kubernetes.io/part-of: where-for-dinner-api-gateway
     apps.tanzu.vmware.com/auto-configure-actuators: "true"
+    apps.tanzu.vmware.com/has-tests: "true"
 spec:
   env: null
   params:
@@ -25,7 +26,7 @@ spec:
       cpu: 2000m
   source:
     git:
-      url: <https URL for your generated project's Git repository>
+      url: https://github.com/modern-apps/vmware-tanzu-where-for-dinner
       ref:
         branch: main
     subPath: where-for-dinner-api-gateway
@@ -40,6 +41,7 @@ metadata:
     app.kubernetes.io/part-of: where-for-dinner-search
     networking.knative.dev/visibility: cluster-local
     apps.tanzu.vmware.com/auto-configure-actuators: "true"
+    apps.tanzu.vmware.com/has-tests: "true"
 spec:
   env: null
   params:
@@ -63,7 +65,7 @@ spec:
       cpu: 2000m
   source:
     git:
-      url: <https URL for your generated project's Git repository>
+      url: https://github.com/modern-apps/vmware-tanzu-where-for-dinner
       ref:
         branch: main
     subPath: where-for-dinner-search
@@ -78,6 +80,7 @@ metadata:
     app.kubernetes.io/part-of: where-for-dinner-search-proc
     networking.knative.dev/visibility: cluster-local
     apps.tanzu.vmware.com/auto-configure-actuators: "true"
+    apps.tanzu.vmware.com/has-tests: "true"
 spec:
   env:
   - name: spring_profiles_active
@@ -105,7 +108,7 @@ spec:
       cpu: 2000m
   source:
     git:
-      url: <https URL for your generated project's Git repository>
+      url: https://github.com/modern-apps/vmware-tanzu-where-for-dinner
       ref:
         branch: main
     subPath: where-for-dinner-search-proc
@@ -120,6 +123,7 @@ metadata:
     app.kubernetes.io/part-of: where-for-dinner-notify
     networking.knative.dev/visibility: cluster-local
     apps.tanzu.vmware.com/auto-configure-actuators: "true"
+    apps.tanzu.vmware.com/has-tests: "true"
 spec:
   build:
     env: null
@@ -144,7 +148,7 @@ spec:
       cpu: 2000m
   source:
     git:
-      url: <https URL for your generated project's Git repository>
+      url: https://github.com/modern-apps/vmware-tanzu-where-for-dinner
       ref:
         branch: main
     subPath: where-for-dinner-notify
@@ -159,6 +163,7 @@ metadata:
     app.kubernetes.io/part-of: where-for-dinner-availability
     networking.knative.dev/visibility: cluster-local
     apps.tanzu.vmware.com/auto-configure-actuators: "true"
+    apps.tanzu.vmware.com/has-tests: "true"
 spec:
   build:
     env: null
@@ -184,7 +189,7 @@ spec:
       cpu: 2000m
   source:
     git:
-      url: <https URL for your generated project's Git repository>
+      url: https://github.com/modern-apps/vmware-tanzu-where-for-dinner
       ref:
         branch: main
     subPath: where-for-dinner-availability
@@ -198,6 +203,7 @@ metadata:
     apps.tanzu.vmware.com/workload-type: web
     app.kubernetes.io/part-of: where-for-dinner-ui
     networking.knative.dev/visibility: cluster-local
+    apps.tanzu.vmware.com/has-tests: "true"
 spec:
   env:
   - name: REACT_APP_PROFILE
@@ -215,7 +221,7 @@ spec:
       cpu: 2000m
   source:
     git:
-      url: <https URL for your generated project's Git repository>
+      url: https://github.com/modern-apps/vmware-tanzu-where-for-dinner
       ref:
         branch: main
     subPath: where-for-dinner-ui
@@ -230,6 +236,7 @@ metadata:
     app.kubernetes.io/part-of: where-for-dinner-crawler
     networking.knative.dev/visibility: cluster-local
     apps.tanzu.vmware.com/auto-configure-actuators: "true"
+    apps.tanzu.vmware.com/has-tests: "true"
 spec:
   params:
   - name: ports
@@ -246,7 +253,7 @@ spec:
       cpu: 2000m
   source:
     git:
-      url: <https URL for your generated project's Git repository>
+      url: https://github.com/modern-apps/vmware-tanzu-where-for-dinner
       ref:
         branch: main
     subPath: where-for-dinner-crawler
